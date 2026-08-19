@@ -1,0 +1,25 @@
+{
+  "name": "dsh-chat-tools",
+  "version": "0.1.0",
+  "description": "DSH Web client plugin: adjustable chat column width and alignment, a numbered question history with keyboard navigation and auto-load of older questions, plus markdown outline rails on both the conversation and the file preview.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT"
+}

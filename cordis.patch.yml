@@ -1,0 +1,7 @@
+# dsh-chat-tools bundle patch: mounts the plugin into the profile.
+# Applied after the profile's own patch layer. This row is the browser
+# roster entry — the modules node half scans `dsh.client` rows into
+# window.__DSH_BOOT__ and serves /plugins/dsh-chat-tools/client.js.
+- insert:
+    - id: dsh-chat-tools
+      name: 'dsh-chat-tools'
